@@ -1,0 +1,258 @@
+@import "reset";
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=Asap:400,400i,500,500i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Satisfy');
+$color1: #b9261c;
+$letra:"Asap";
+
+.contenedor{
+	max-width: 1000px;
+	margin: auto;
+}
+
+nav{
+	background-color: black;
+	padding: 15px 0px;
+	position: fixed;
+	z-index: 100;
+	width: 100%;
+	.menu{
+		display: flex;
+		justify-content:space-between;
+	}
+		h1{
+			color: white;
+			font-size: 40px;
+			font-family: 'Lobster', cursive;
+		}
+		ul{
+			display: flex;
+			font-family: $letra;
+			font-size: 18px;
+			text-decoration: none;
+			text-align: center;
+			padding-top: 10px;
+			
+			a{
+				text-decoration: none;
+				color: $color1;
+				margin: 0 15px;
+				padding-bottom: 15px;
+				&:hover{
+					color: white;
+					border-bottom: 2px white solid;
+				}
+		}
+	}
+}
+
+header{
+	background-color: black;
+	}
+	.imagen{
+		background-color: black;
+		text-align: center;
+		padding-bottom: 70px;
+		padding-top: 140px;
+	}	
+	.redes{
+		display: flex;
+		justify-content: flex-end;
+		font-size: 30px;
+		padding: 15px 15px 0px 15px;
+		margin-bottom: 0px;
+		a{
+			text-decoration: none;
+			color: white;
+			border: white 1px solid;
+			color: white;
+			border-radius: 50%;
+			margin: 0 5px;
+			height: 45px;
+			width: 45px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			&:hover{
+					color: $color1;
+					border: $color1 1px solid;
+			}
+		}
+	}
+	.flecha{
+		text-align: center;
+		font-size: 40px;
+		padding: 0;
+		margin: 0;
+		a{
+			color: white;
+			padding: 0 0 20 0px;
+			&:hover{
+					color: $color1;
+			}
+		}
+}
+.nosotros{
+	padding: 140px 0px;
+	display: flex;
+	flex: 1;
+	font-family: $letra;
+	.quienes_somos{
+		padding-left: 50px; 
+		h2{
+			text-align: center;
+			font-size: 40px;
+			padding-top: 0px;
+		}
+		p{
+			font-size: 20px;
+			padding-top: 20px;
+			line-height: 30px;
+		}
+	}
+}
+.menus{
+	padding-bottom: 70px;
+	padding-top: 100px;
+	h2{
+		text-align: center;
+		font-size: 40px;
+		padding-top: 0px;
+		padding-bottom: 30px;
+	}
+	.descripcion{
+		display: flex;
+		flex: 1;
+		background-color: $color1;
+		text-align: center;
+		div{
+		border: 1px black solid;
+		flex: 1;
+		}
+		h3{
+			font-size: 30px;
+			padding-top: 15px;
+		}
+		p{
+			font-size: 20px;
+			padding: 20px;
+		}
+		img{
+			padding-bottom: 15px;
+		}
+	}
+
+}
+.galeria{
+		text-align: center;
+		font-family: $letra;
+		padding-bottom: 60px;
+		padding-top: 90px;
+	h2{
+		font-size: 40px;
+		padding-bottom: 30px;
+	}
+	div{
+		img{
+			padding: 10px;
+		}
+	}
+}
+.form{
+		background-color: $color1;
+		padding-bottom: 50px;
+		padding-top: 40px;
+	.contacto{
+		font-family: $letra;
+		h2{
+			font-size: 40px;
+			padding-bottom: 30px;
+			text-align: center;
+			padding-top: 30px;
+		}
+	}
+	.contacto1{
+		display: flex;
+		font-size: 20px;
+		justify-content: space-around;
+		label{
+			display: inline-block;
+		    width: 200px;
+		    text-align: right;
+		    padding: 5px;
+		}
+		textarea{
+			padding: 15px 7px 0 7px;
+			height: 110px;
+   			margin-top: 5px;
+		}
+		button{
+			text-align: center;
+			padding: 5px 15px;
+			margin-left: 190px;
+			border-radius: 10%;
+			color: black;
+			background-color: white;
+			margin-top: 15px;
+			font-family: $letra;
+			font-weight: bold;
+			font-size: 15px;
+			&:hover{
+				color: $color1;
+				cursor: hand;
+				cursor: pointer;
+			}
+		}
+	}
+	.direccion{
+		text-align: center;
+		padding-top: 40px;
+		h3{
+			font-size: 30px;
+			padding-bottom: 20px;
+			font-weight: bold;
+		}
+		p{
+			padding: 10px 0px;
+			font-size: 25px;
+		}
+		.redes1{
+			display: flex;
+			justify-content: center;
+			font-size: 30px;
+			padding: 15px 15px 0px 15px;
+			margin-bottom: 0px;
+			a{
+				text-decoration: none;
+				color: black;
+				border: black 1px solid;
+				border-radius: 50%;
+				margin: 0 5px;
+				height: 45px;
+				width: 45px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				&:hover{
+						color: white;
+						border: white 1px solid;
+				}
+			}
+		}
+	}
+}
+footer{
+	background-color: black;
+	font-family: $letra;
+	color: $color1;
+	padding: 15px 0px;
+	.footer{
+		display: flex;
+		text-align: center;
+		justify-content: space-around;
+	}
+	.chris{
+		font-family: Satisfy;
+		font-size: 20px;
+	}
+}

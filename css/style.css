@@ -1,0 +1,261 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css?family=Lobster");
+@import url("https://fonts.googleapis.com/css?family=Asap:400,400i,500,500i,700,700i");
+@import url("https://fonts.googleapis.com/css?family=Satisfy");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.contenedor {
+  max-width: 1000px;
+  margin: auto; }
+
+nav {
+  background-color: black;
+  padding: 15px 0px;
+  position: fixed;
+  z-index: 100;
+  width: 100%; }
+  nav .menu {
+    display: flex;
+    justify-content: space-between; }
+  nav h1 {
+    color: white;
+    font-size: 40px;
+    font-family: 'Lobster', cursive; }
+  nav ul {
+    display: flex;
+    font-family: "Asap";
+    font-size: 18px;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 10px; }
+    nav ul a {
+      text-decoration: none;
+      color: #b9261c;
+      margin: 0 15px;
+      padding-bottom: 15px; }
+      nav ul a:hover {
+        color: white;
+        border-bottom: 2px white solid; }
+
+header {
+  background-color: black; }
+
+.imagen {
+  background-color: black;
+  text-align: center;
+  padding-bottom: 70px;
+  padding-top: 140px; }
+
+.redes {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 30px;
+  padding: 15px 15px 0px 15px;
+  margin-bottom: 0px; }
+  .redes a {
+    text-decoration: none;
+    color: white;
+    border: white 1px solid;
+    color: white;
+    border-radius: 50%;
+    margin: 0 5px;
+    height: 45px;
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .redes a:hover {
+      color: #b9261c;
+      border: #b9261c 1px solid; }
+
+.flecha {
+  text-align: center;
+  font-size: 40px;
+  padding: 0;
+  margin: 0; }
+  .flecha a {
+    color: white;
+    padding: 0 0 20 0px; }
+    .flecha a:hover {
+      color: #b9261c; }
+
+.nosotros {
+  padding: 140px 0px;
+  display: flex;
+  flex: 1;
+  font-family: "Asap"; }
+  .nosotros .quienes_somos {
+    padding-left: 50px; }
+    .nosotros .quienes_somos h2 {
+      text-align: center;
+      font-size: 40px;
+      padding-top: 0px; }
+    .nosotros .quienes_somos p {
+      font-size: 20px;
+      padding-top: 20px;
+      line-height: 30px; }
+
+.menus {
+  padding-bottom: 70px;
+  padding-top: 100px; }
+  .menus h2 {
+    text-align: center;
+    font-size: 40px;
+    padding-top: 0px;
+    padding-bottom: 30px; }
+  .menus .descripcion {
+    display: flex;
+    flex: 1;
+    background-color: #b9261c;
+    text-align: center; }
+    .menus .descripcion div {
+      border: 1px black solid;
+      flex: 1; }
+    .menus .descripcion h3 {
+      font-size: 30px;
+      padding-top: 15px; }
+    .menus .descripcion p {
+      font-size: 20px;
+      padding: 20px; }
+    .menus .descripcion img {
+      padding-bottom: 15px; }
+
+.galeria {
+  text-align: center;
+  font-family: "Asap";
+  padding-bottom: 60px;
+  padding-top: 90px; }
+  .galeria h2 {
+    font-size: 40px;
+    padding-bottom: 30px; }
+  .galeria div img {
+    padding: 10px; }
+
+.form {
+  background-color: #b9261c;
+  padding-bottom: 50px;
+  padding-top: 40px; }
+  .form .contacto {
+    font-family: "Asap"; }
+    .form .contacto h2 {
+      font-size: 40px;
+      padding-bottom: 30px;
+      text-align: center;
+      padding-top: 30px; }
+  .form .contacto1 {
+    display: flex;
+    font-size: 20px;
+    justify-content: space-around; }
+    .form .contacto1 label {
+      display: inline-block;
+      width: 200px;
+      text-align: right;
+      padding: 5px; }
+    .form .contacto1 textarea {
+      padding: 15px 7px 0 7px;
+      height: 110px;
+      margin-top: 5px; }
+    .form .contacto1 button {
+      text-align: center;
+      padding: 5px 15px;
+      margin-left: 190px;
+      border-radius: 10%;
+      color: black;
+      background-color: white;
+      margin-top: 15px;
+      font-family: "Asap";
+      font-weight: bold;
+      font-size: 15px; }
+      .form .contacto1 button:hover {
+        color: #b9261c;
+        cursor: hand;
+        cursor: pointer; }
+  .form .direccion {
+    text-align: center;
+    padding-top: 40px; }
+    .form .direccion h3 {
+      font-size: 30px;
+      padding-bottom: 20px;
+      font-weight: bold; }
+    .form .direccion p {
+      padding: 10px 0px;
+      font-size: 25px; }
+    .form .direccion .redes1 {
+      display: flex;
+      justify-content: center;
+      font-size: 30px;
+      padding: 15px 15px 0px 15px;
+      margin-bottom: 0px; }
+      .form .direccion .redes1 a {
+        text-decoration: none;
+        color: black;
+        border: black 1px solid;
+        border-radius: 50%;
+        margin: 0 5px;
+        height: 45px;
+        width: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .form .direccion .redes1 a:hover {
+          color: white;
+          border: white 1px solid; }
+
+footer {
+  background-color: black;
+  font-family: "Asap";
+  color: #b9261c;
+  padding: 15px 0px; }
+  footer .footer {
+    display: flex;
+    text-align: center;
+    justify-content: space-around; }
+  footer .chris {
+    font-family: Satisfy;
+    font-size: 20px; }
+
+/*# sourceMappingURL=style.css.map */
